@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Age Calculator</h1>
+            <div class="input-section">
+                <label>Enter your birthdate:</label>
+                <div class="date-inputs">
+                    <select id="day" required>
+                        <option value="" disabled selected>Day</option>
+                    </select>
+                    <select id="month" required>
+                        <option value="" disabled selected>Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="year" required>
+                        <option value="" disabled selected>Year</option>
+                    </select>
+                </div>
+                <button onclick="calculateAge()">Calculate Age</button>
+            </div>
+            <div class="result" id="result">
+                <h2>Your exact age is:</h2>
+                <div class="time-blocks">
+                    <div class="time-block">
+                        <span class="number" id="years">-</span>
+                        <span class="label">Years</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="number" id="months">-</span>
+                        <span class="label">Months</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="number" id="days">-</span>
+                        <span class="label">Days</span>
+                    </div>
+                </div>
+                <div class="time-blocks">
+                    <div class="time-block">
+                        <span class="number" id="hours">-</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="number" id="minutes">-</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="number" id="seconds">-</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
